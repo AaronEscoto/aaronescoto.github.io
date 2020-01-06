@@ -1,0 +1,103 @@
+
+/** body **/
+
+body {
+  background-color : #13181d;
+  color: #fefefd;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+  background: #0084b8; /* Safari */
+}
+
+::-moz-selection {
+  background: #0084b8; /* Firefox */
+}
+
+p, li {
+  font-size: 1.4em;
+}
+
+/** headers **/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  color: #838588;
+}
+
+h3 {
+  font-size: 2.0em;
+  margin: 0px;
+}
+
+/** links **/
+
+a:link,
+a:visited,
+a:active {
+  color: #0084b8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+/** social media icons **/
+
+.soc {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.soc path {
+  fill: #FFF;
+}
+
+.soc:hover {
+  background-color: #44546A;
+}
+
+.soc-dribbble {
+  background-color: #ea4c89;
+}
+
+.soc-github {
+  background-color: #333333;
+}
+
+.soc-linkedin {
+  background-color: #0084b8;
+}
+
+.soc-lastfm {
+  background-color: #d51007;
+}
+
+.soc-youtube {
+  background-color: #b31217;
+}
+
+.soc-kickstarter {
+  background-color: #2BDE73;
+}
+
+.soc-angellist {
+  background-color: #353e4a;
+}
+
+/** helpers **/
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

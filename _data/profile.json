@@ -1,0 +1,29 @@
+{
+  "about": [{
+    "desc": "name",
+    "val": "<h3>Aaron Escoto</h3>"
+  }, {
+    "icon": "map-marker",
+    "desc": "location",
+    "val": "Tracy, CA"
+  }, {
+    "icon": "code",
+    "desc": "work",
+    "val": "Cloud Operations Engineer previously @ <a href='https://www.peoplegrove.com' target='_blank'>TiVo</a>"
+  }, {
+    "icon": "envelope",
+    "desc": "contact",
+    "val": "<a href='mailto:aaronlescoto@gmail.com'>aaronlescoto@gmail.com</a>"
+  },],
+  "social_media": [{
+    "profile": "github",
+    "icon": "github",
+    "desc": "Github",
+    "url": "https://github.com/aaronescoto"
+  }, {
+    "profile": "linkedin",
+    "icon": "linkedin",
+    "desc": "LinkedIn",
+    "url": "https://www.linkedin.com/in/aaronescoto"
+  },]
+}

@@ -1,0 +1,76 @@
+---
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  
+  <!-- meta -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="{{ site.data.meta.description }}"/>
+  <meta name="keywords" content="{{ site.data.meta.keywords }}"/>
+  <meta name="author" content="{{ site.data.meta.author }}"/>
+
+  <title>{{ site.data.meta.title }}</title>
+
+  <!-- fonts -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+
+  <!-- css libs -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" media='screen'>
+
+  <!-- scripts -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+  <!-- app styles -->
+  <link href="assets/css/joga.css" rel="stylesheet">
+
+</head>
+<body>
+  
+  {{content}}
+  
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    // http://stackoverflow.com/a/35126817
+    $(document).ready(function() {
+      $('img[src$=".svg"]').each(function() {
+          var $img = jQuery(this);
+          var imgURL = $img.attr('src');
+          var attributes = $img.prop("attributes");
+          $.get(imgURL, function(data) {
+              var $svg = jQuery(data).find('svg');
+              $svg = $svg.removeAttr('xmlns:a');
+              $.each(attributes, function() {
+                  $svg.attr(this.name, this.value);
+              });
+              $img.replaceWith($svg);
+          }, 'xml');
+      });
+    });
+  </script>
+  
+</body>
+</html>
