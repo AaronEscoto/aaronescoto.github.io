@@ -14,7 +14,11 @@
     "icon": "envelope",
     "desc": "contact",
     "val": "<a href='mailto:aaronlescoto@gmail.com'>aaronlescoto@gmail.com</a>"
-  },],
+  }, {
+    "icon": "file-pdf-o",
+    "desc": "resume",
+    "val": "<a href='assets/raw/Aaron_C.V.pdf'>Resume</a>"
+  }],
   "social_media": [{
     "profile": "github",
     "icon": "github",
