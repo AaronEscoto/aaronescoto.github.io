@@ -5,11 +5,11 @@
   }, {
     "icon": "map-marker",
     "desc": "location",
-    "val": "Tracy, CA"
+    "val": "San Jose, CA"
   }, {
     "icon": "code",
     "desc": "work",
-    "val": "Cloud Operations Engineer previously @ <a href='https://www.tivo.com' target='_blank'>TiVo</a>"
+    "val": "DevOps Engineer @ <a href='https://www.accenture.com' target='_blank'>Accenture</a>"
   }, {
     "icon": "envelope",
     "desc": "contact",
